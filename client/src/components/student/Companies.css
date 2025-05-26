@@ -1,0 +1,23 @@
+
+.marquee-container {
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 3rem;
+  animation: scroll-marquee 20s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
