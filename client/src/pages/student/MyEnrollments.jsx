@@ -49,8 +49,8 @@ const MyEnrollments = () => {
   }, [enrolledCourses]);
 
   return (
-    <>
-    <div className='md:px-36 px-8 pt-10'>
+    <div className="flex flex-col min-h-screen">
+    <div className=' flex-grow md:px-36 px-8 pt-10'>
       <h1 className='text-2xl font-semibold'>My Enrollments</h1>
       <table className='md:table-auto table-fixed w-full overflow-hidden border mt-10'>
         <thead className='text-gray-900 border-b border-gray-500/20 text-sm text-left max-sm:hidden'>
@@ -94,7 +94,7 @@ const MyEnrollments = () => {
     </div>
 
     <Footer/>
-    </>
+    </div>
   )
 }
 
