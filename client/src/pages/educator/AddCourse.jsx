@@ -251,7 +251,7 @@ const AddCourse = () => {
                   {chapter.chapterContent.map((lecture, lectureIndex) => (
                     <div key={lectureIndex} className="flex justify-between items-center mb-2">
                       <span> {lectureIndex + 1} {lecture.lectureTitle} - {lecture.lectureDuration} mins -
-                        <a href={lecture.lectureUrl} target="_blank" className="text-blue-500">
+                        <a href={lecture.lectureUrl} target="_blank" className="text-indigo-500">
                           Link
                         </a> - {lecture.isPreviewFree ? "Free Preview" : "Paid"}
                       </span>
@@ -265,7 +265,7 @@ const AddCourse = () => {
               )}
             </div>
           ))}
-          <div className='flex justify-center items-center bg-blue-100 p-2 rounded-lg cursor-pointer' 
+          <div className='flex justify-center items-center bg-indigo-200 p-2 rounded-lg cursor-pointer' 
           onClick={()=> handleChapter('add')}>
           + Add Chapter</div>
 
@@ -315,7 +315,7 @@ const AddCourse = () => {
                     />
                   </div>
 
-                  <button type='button' className="w-full bg-blue-400 text-white px-4
+                  <button type='button' className="w-full bg-indigo-500 text-white px-4
                   py-2 rounded" onClick={addLecture}>Add</button>
 
                   <img onClick={() => setShowPopup(false)} src={assets.cross_icon}
@@ -325,8 +325,10 @@ const AddCourse = () => {
           )
           }
         </div>
-        <button type="submit" className='bg-black text-white w-max py-2.5 px-8
-        rounded my-4'>
+        <button type="submit" className='bg-indigo-500 text-white w-max py-2.5 px-8
+        rounded my-4
+          font-semibold border transition-all duration-700 hover:bg-white/20
+           hover:border-indigo-500 hover:scale-105 hover:text-indigo-500'>
           Add
         </button>
       </form>

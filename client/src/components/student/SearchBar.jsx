@@ -19,8 +19,12 @@ const SearchBar = ({data}) => {
     <input onChange={e => setInput(e.target.value)} value={input} type="text" 
       placeholder='Search for courses' 
       className='w-full h-full outline-none text-gray-500/80' />
-    <button type='submit' className='bg-indigo-500/90 rounded text-white md:px-10 px-7 
-    md:py-3 py-2 mx-1'>Search</button>
+      {/* bg-indigo-500/90 rounded text-white md:px-10 px-7 
+    md:py-3 py-2 mx-1 */}
+    <button type='submit' className='md:px-10 px-7 
+    md:py-3 py-2 mx-1  rounded-lg text-white font-semibold bg-indigo-500 
+                 border transition-all duration-700 hover:bg-white/20 hover:border-indigo-500 
+                 hover:scale-90 hover:text-indigo-500'>Search</button>
   </form>
   
   )

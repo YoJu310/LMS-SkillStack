@@ -48,8 +48,10 @@ const MyEnrollments = () => {
     }
   }, [enrolledCourses]);
 
+  //  bg-gradient-to-b from-[#e0e7ff]
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
     <div className=' flex-grow md:px-36 px-8 pt-10'>
       <h1 className='text-2xl font-semibold'>My Enrollments</h1>
       <table className='md:table-auto table-fixed w-full overflow-hidden border mt-10'>
@@ -81,8 +83,11 @@ const MyEnrollments = () => {
                 ${progressArray[index].totalLectures} `}<span>Lectures</span>
               </td>
               <td className='px-4 py-3 max-sm:text-right'>
-                <button className='px-3 sm:px-5 py-1.5 sm:py-2 bg-indigo-600
-                 max-sm:text-xs text-white' onClick={()=> navigate('/player/' + course._id)}>
+              {/* px-3 sm:px-5 py-1.5 sm:py-2 bg-indigo-600
+                 max-sm:text-xs text-white */}
+                <button className='px-4 py-2 rounded-lg text-white font-semibold bg-indigo-500 
+                 border transition-all duration-300 hover:bg-white/20 hover:border-indigo-500 
+                 hover:scale-105 hover:text-indigo-500' onClick={()=> navigate('/player/' + course._id)}>
                   {progressArray[index] && progressArray[index].lectureCompleted / 
                    progressArray[index].totalLectures ===1 ? 'Completed' : 'On Going'}
                   </button>

@@ -13,7 +13,8 @@ const TestimonialsSection = () => {
         {dummyTestimonial.map((testimonial, index)=>(
           <div key={index} className='text-sm text-left border border-gray-500/30
           pd-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5
-          overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-lg'>
+          overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105 
+          hover:shadow-lg bg-gradient-to-b from-[#e0e7ff]'>
             <div className='flex items-center gap-4 px-5 py-4 bg-gray-500/10'>
               <img className='h-12 w-12 rounded-full' src={testimonial.image} 
               alt={testimonial.name} />

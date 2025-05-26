@@ -20,7 +20,11 @@ const CoursesSection = () => {
       </div>
 
       <Link to={'/course-list'} onClick={() => scrollTo(0, 0)}
-        className='text-gray-500 border border-gray-500/30 px-10 py-3 rounded'>
+      // text-gray-500 border border-gray-500/30 px-10 py-3 rounded
+        className='md:px-10 px-7 
+    md:py-3 py-2 mx-1  rounded-lg text-white font-semibold bg-indigo-500 
+                 border transition-all duration-700 hover:bg-white/20 hover:border-indigo-500 
+                 hover:scale-105 hover:text-indigo-500'>
         Show all courses
       </Link>
     </div>

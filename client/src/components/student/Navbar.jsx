@@ -36,13 +36,10 @@ const Navbar = () => {
       toast.error(error.message);
     }
   };
-
   return (
     <div
       className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 
-    border-b border-gray-500 py-4 ${
-      isCourseListPage ? "bg-white" : "bg-[#e0e7ff]"
-    }`}
+       border-b border-gray-500 py-4 ${isCourseListPage ? "bg-white" : "bg-[#e0e7ff]" }`}
     >
       <div className="flex items-center gap-1">
         <img
@@ -70,8 +67,10 @@ const Navbar = () => {
         ) : (
           <button
             onClick={() => openSignIn()}
-            className="bg-indigo-600 text-white px-5 py-2 
-        rounded-full"
+             
+            className="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold  
+                 border transition-all duration-700 hover:bg-white/20 hover:border-indigo-500 
+                hover:scale-105 hover:text-indigo-500 "
           >
             Create Account
           </button>
